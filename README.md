@@ -14,7 +14,7 @@ git init
 git add .
 git commit -m "Proyecto"
 git branch -M main
-git remote add origin git@github.com:eacevedo85/04-hooks-app.git
+git remote add origin git@github.com:eacevedo85/docker-php8512.git
 git push -u origin main
 ```
 
@@ -24,4 +24,12 @@ git push -u origin main
 git status
 git pull
 bun install
+```
+
+// Remoto
+
+```bash
+git clone git@github.com:eacevedo85/docker-php8512.git
+bun install
+npm install
 ```
