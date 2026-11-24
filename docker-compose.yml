@@ -1,0 +1,11 @@
+services:
+   php85:
+      build: .
+      container_name: php85
+      ports:
+         - '8889:80'
+      volumes:
+         - type: bind
+           source: ${HTDOCS_PATH:?Define HTDOCS_PATH en .env}
+           target: /var/www/html
+      restart: unless-stopped
